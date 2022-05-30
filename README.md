@@ -26,3 +26,8 @@ python basicMovements.py
 ```bash
 python FaceRecognition.py
 ```
+
+- To test the connection of the drone's camera to your computer, run
+```bash
+python imageCapture.py
+```
