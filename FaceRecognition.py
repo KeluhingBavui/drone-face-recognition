@@ -1,4 +1,3 @@
-import imghdr
 import cv2
 import numpy as np
 
@@ -19,6 +18,7 @@ def FindFace(img):
         myFaceListArea.append(area)
 
     #Return the nearest face to the camera(face with biggest area)
+    #Else return nothing
     if len(myFaceListArea) != 0:
         i = myFaceListArea.index(max(myFaceListArea))
         return img, [myFaceListC[i],myFaceListArea[i]]
